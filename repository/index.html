@@ -17,16 +17,20 @@
   <meta http-equiv="window-target" content="_top" />
   
   
-  <title>little &amp; more</title>
-  <meta property="og:type" content="website">
-<meta property="og:title" content="life with bug wu">
-<meta property="og:url" content="https://amilyliu6.github.io/index.html">
+  <title>Repositories | little &amp; more</title>
+  <meta name="description" content="Githubgithub:  username: “https:&#x2F;&#x2F;github.com&#x2F;labuladong&#x2F;fucking-algorithm&quot;  # github username  Githubgithub:  username: “https:&#x2F;&#x2F;github.com&#x2F;sanyuan0704&#x2F;my_blog&quot;  # github username">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Repositories">
+<meta property="og:url" content="https://amilyliu6.github.io/repository/index.html">
 <meta property="og:site_name" content="life with bug wu">
+<meta property="og:description" content="Githubgithub:  username: “https:&#x2F;&#x2F;github.com&#x2F;labuladong&#x2F;fucking-algorithm&quot;  # github username  Githubgithub:  username: “https:&#x2F;&#x2F;github.com&#x2F;sanyuan0704&#x2F;my_blog&quot;  # github username">
 <meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2020-06-07T10:14:27.487Z">
+<meta property="article:modified_time" content="2020-06-07T10:14:27.487Z">
 <meta property="article:author" content="Amily Liu">
 <meta name="twitter:card" content="summary">
   <!-- Canonical links -->
-  <link rel="canonical" href="https://amilyliu6.github.io/index.html">
+  <link rel="canonical" href="https://amilyliu6.github.io/repository/index.html">
   
     <link rel="alternate" href="/atom.xml" title="life with bug wu" type="application/atom+xml">
   
@@ -43,7 +47,7 @@
 <meta name="generator" content="Hexo 4.2.1"></head>
 
 
-<body class="main-center" itemscope itemtype="http://schema.org/WebPage">
+<body class="main-center no-sidebar" itemscope itemtype="http://schema.org/WebPage">
   <header class="header" itemscope itemtype="http://schema.org/WPHeader">
   <div class="slimContent">
     <div class="navbar-header">
@@ -292,76 +296,45 @@
 
   
   <main class="main" role="main">
-  
-  <div class="content article-list">
-    
-      <article class="article article-type-post" itemscope itemtype="http://schema.org/BlogPosting">
-  <div class="article-header">
-    
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/06/07/life-with-bug/">life with bug</a>
-    </h1>
-  
-
+  <article class="article article-repository article-type-list" itemscope="">
+  <header class="article-header">
+    <h1 itemprop="title">Repositories</h1>
+    <p class="text-muted">I have <span id="repo-count">0</span> projects on Github</p>
+  </header>
+  <div class="article-body">
+    <div class="repo-content">
+      <div class="blankslate">
+        <p>正在加载...</p>
+      </div>
+    </div>
   </div>
-  
-  <p class="article-meta">
-    <span class="article-date">
-    <i class="icon icon-calendar-check"></i>
-	<a href="/2020/06/07/life-with-bug/" class="article-date">
-	  <time datetime="2020-06-07T07:35:29.782Z" itemprop="datePublished">Jun 7</time>
-	</a>
-</span>
-    
-  <span class="article-category">
-    <i class="icon icon-folder"></i>
-    <a class="article-category-link" href="/categories/Bugs/">Bugs</a>
-  </span>
-
-    
-
-    <span class="post-comment"><i class="icon icon-comment"></i> <a href="/2020/06/07/life-with-bug/#comments" class="article-comment-link">Comments</a></span>
-    
-  </p>
 </article>
 
-    
-      <article class="article article-type-post" itemscope itemtype="http://schema.org/BlogPosting">
-  <div class="article-header">
-    
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/06/07/hello-hexo/">Hello hexo</a>
-    </h1>
   
 
-  </div>
-  
-  <p class="article-meta">
-    <span class="article-date">
-    <i class="icon icon-calendar-check"></i>
-	<a href="/2020/06/07/hello-hexo/" class="article-date">
-	  <time datetime="2020-06-07T03:45:59.322Z" itemprop="datePublished">Jun 7</time>
-	</a>
-</span>
-    
-    
-  <span class="article-tag">
-    <i class="icon icon-tags"></i>
-	<a class="article-tag-link" href="/tags/others/" rel="tag">others</a>
-  </span>
 
 
-    <span class="post-comment"><i class="icon icon-comment"></i> <a href="/2020/06/07/hello-hexo/#comments" class="article-comment-link">Comments</a></span>
-    
-  </p>
-</article>
-
-    
-  </div>
-
-   
+<!--Github项模版-->
+<script type="text/template" id="list-template">
+  <li class="col-sm-6 col-md-6 col-lg-4">
+    <div class="repo hover-shadow hover-grow">
+      <div class="repo-image geopattern" data-pattern-id="{%=name%}"></div>
+      <h3 class="repo-title"><a href="{%=clone_url%}" target="_blank" rel="external nofollow noopener noreferrer">{%=full_name%}</a></h3>
+      <p class="repo-body">{%=description%}</p>
+      <div class="repo-meta">
+        <span class="meta meta-type pull-left" aria-label="{%=language%} project">{%=language%}</span>
+        <span class="meta meta-star" aria-label="{%=stargazers_count%} stars"><i class="icon icon-star-fill"></i> {%=stargazers_count%}</span>
+        <span class="meta meta-fork" aria-label="{%=forks_count%} forks"><i class="icon icon-code-fork"></i> {%=forks_count%}</span>
+        <span class="meta meta-last-updated" aria-label="最后更新时间：{%=updated_at%}">
+        <i class="icon icon-clock"></i> <time datetime="{%=updated_at%}">{%=updated_at%}</time></span>
+      </div>
+    </div>
+  </li>
+</script>
+<!--获取失败模版-->
+<script type="text/template" id="error-template">
+  <h3>加载失败</h3><p>请刷新或稍后再试...</p>
+</script>
 </main>
 
   <footer class="footer" itemscope itemtype="http://schema.org/WPFooter">
@@ -417,9 +390,59 @@ window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')
 
 
 
+   <script type="text/javascript">
+var open = function() {
+  var baiduTpl = new Object();
+  var handleTpl = function() {
+    baiduTpl.list = baidu.template("list-template");
+    baiduTpl.error = baidu.template("error-template");
+  };
 
+  var handleGithub = function() {
+    var repoContainer = $('.repo-content');
+    var errorContainer = repoContainer.find(".blankslate");
+    var countContainer = $("#repo-count");
 
-   
+    $.get("https://api.github.com/users/AmilyLiu6/repos", function(result) {
+      if (result) {
+        errorContainer.remove();
+        countContainer.text(result.length); //设置项目个数
+        var ul = $("<ul class='repo-list row clearfix'></ul>");
+        result.sort(function(a, b) {
+          return new Date(b.updated_at) - new Date(a.updated_at)
+        }).sort(function(a, b) {
+          var a_start = a.stargazers_count;
+          var b_start = b.stargazers_count;
+          if (a.fork) a_start * 0.5;
+          if (b.fork) b_start * 0.5;
+          return b_start - a_start;
+        }).map(function(repo) {
+          if (!repo.description) repo.description = "";
+          repo.updated_at = repo.updated_at.substring(0, repo.updated_at.lastIndexOf("T"));
+          var html = baiduTpl.list(repo);
+          ul.append(html);
+        })
+
+        repoContainer.append(ul);
+        $(".geopattern").each(function() {
+          $(this).geopattern($(this).data('pattern-id'));
+        });
+      } else {
+        errorContainer.append(baiduTpl.error());
+      }
+    });
+  };
+
+  return {
+    init: function() {
+      handleTpl();
+      handleGithub();
+    }
+  }
+};
+$(open().init);
+</script>
+
 
 
 
